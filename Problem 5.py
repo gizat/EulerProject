@@ -25,7 +25,7 @@ def main():
 
         number += 1
 
-    print("Number is: " + str(number))
+    print("Number is:" + str(number))
 
 
 if __name__ == '__main__':
