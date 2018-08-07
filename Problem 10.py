@@ -1,6 +1,5 @@
-# Problem 7
-# By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
-# What is the 10 001st prime number?
+# Problem 10
+# Find the sum of all the primes below two million.
 
 
 def main():
@@ -9,7 +8,9 @@ def main():
 
     prime_numbers = [2, 3, 5]
 
-    while len(prime_numbers) < 10001:
+    sum_of_primes = 0
+
+    while number < 2000000:
 
         is_prime = True
 
@@ -22,10 +23,15 @@ def main():
 
         if is_prime:
             prime_numbers.append(number)
+            print("----------")
+            print(number)
 
         number += 1
 
-    print(prime_numbers[10000])
+    for prime in prime_numbers:
+        sum_of_primes += prime
+
+    print(sum_of_primes)
 
 
 def sum_digits(num):
