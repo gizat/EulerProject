@@ -23,8 +23,6 @@ def main():
 
         if is_prime:
             prime_numbers.append(number)
-            print("----------")
-            print(number)
 
         number += 1
 
